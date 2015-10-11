@@ -12,9 +12,10 @@
       "text": "Pages about us."
     },
     {
-      "type": "factory",
+      "type": "paragraph",
       "id": "63ad2e58eecdd9e5",
-      "prompt": "Link to a page about yourself here. Type your name enclosed in double square brackets. Then press Command/ALT-S to save.\n\nMake all pages here yours alone with the login below."
+      "prompt": "Link to a page about yourself here. Type your name enclosed in double square brackets. Then press Command/ALT-S to save.\n\nMake all pages here yours alone with the login below.",
+      "text": "[[Ward Cunningham]]"
     },
     {
       "type": "paragraph",
@@ -117,6 +118,17 @@
         "text": "[[Image Transporter]]"
       },
       "date": 1444504515415
+    },
+    {
+      "type": "edit",
+      "id": "63ad2e58eecdd9e5",
+      "item": {
+        "type": "paragraph",
+        "id": "63ad2e58eecdd9e5",
+        "prompt": "Link to a page about yourself here. Type your name enclosed in double square brackets. Then press Command/ALT-S to save.\n\nMake all pages here yours alone with the login below.",
+        "text": "[[Ward Cunningham]]"
+      },
+      "date": 1444598256469
     }
   ]
 }

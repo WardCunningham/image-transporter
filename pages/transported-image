@@ -2,119 +2,116 @@
   "title": "Transported Image",
   "story": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
-      "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg",
+      "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg source]",
       "type": "image",
-      "id": "8163e66d20aa5ac7"
+      "id": "006d72983f026d57"
     },
     {
       "text": "Drag and drop this image into the desired page.",
       "type": "paragraph",
-      "id": "71a37d72fafd8e6e"
+      "id": "d9727da17ef47066"
     },
     {
       "text": "First double click the image to be sure you've found the desired size.",
       "type": "paragraph",
-      "id": "c384fda13eb40dd0"
+      "id": "43f21f16b95b3ce8"
     },
     {
       "text": "The larger image below has been marked up in the less easily edited html.",
       "type": "paragraph",
-      "id": "207b45e3391fad65"
+      "id": "062c9d4becae296f"
     },
     {
-      "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
+      "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
       "type": "html",
-      "id": "e851c9f74f2a9b39"
+      "id": "a3d68c48f9ecf3fd"
     },
     {
       "text": "Remember, these images will be retrieved from a remote server with each viewing and may not be kept there long.",
       "type": "paragraph",
-      "id": "15ea7483979fc608"
+      "id": "bbceea1abd2948be"
     }
   ],
   "journal": [
     {
       "type": "create",
-      "id": "085c5215d8b16d14",
+      "id": "47f4846dd81e90e7",
       "item": {
         "title": "Transported Image"
       },
-      "date": 1444537858000
+      "date": 1444598183000
     },
     {
       "type": "add",
-      "id": "8163e66d20aa5ac7",
+      "id": "006d72983f026d57",
       "item": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
-        "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg",
+        "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg source]",
         "type": "image",
-        "id": "8163e66d20aa5ac7"
+        "id": "006d72983f026d57"
       },
-      "date": 1444537858001
+      "date": 1444598183001,
+      "after": null
     },
     {
       "type": "add",
-      "id": "71a37d72fafd8e6e",
+      "id": "d9727da17ef47066",
       "item": {
         "text": "Drag and drop this image into the desired page.",
         "type": "paragraph",
-        "id": "71a37d72fafd8e6e"
+        "id": "d9727da17ef47066"
       },
-      "date": 1444537858002
+      "date": 1444598183002,
+      "after": "006d72983f026d57"
     },
     {
       "type": "add",
-      "id": "c384fda13eb40dd0",
+      "id": "43f21f16b95b3ce8",
       "item": {
         "text": "First double click the image to be sure you've found the desired size.",
         "type": "paragraph",
-        "id": "c384fda13eb40dd0"
+        "id": "43f21f16b95b3ce8"
       },
-      "date": 1444537858003
+      "date": 1444598183003,
+      "after": "d9727da17ef47066"
     },
     {
       "type": "add",
-      "id": "207b45e3391fad65",
+      "id": "062c9d4becae296f",
       "item": {
         "text": "The larger image below has been marked up in the less easily edited html.",
         "type": "paragraph",
-        "id": "207b45e3391fad65"
+        "id": "062c9d4becae296f"
       },
-      "date": 1444537858004
+      "date": 1444598183004,
+      "after": "43f21f16b95b3ce8"
     },
     {
       "type": "add",
-      "id": "e851c9f74f2a9b39",
+      "id": "a3d68c48f9ecf3fd",
       "item": {
-        "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
+        "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/800px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
         "type": "html",
-        "id": "e851c9f74f2a9b39"
+        "id": "a3d68c48f9ecf3fd"
       },
-      "date": 1444537858005
+      "date": 1444598183005,
+      "after": "062c9d4becae296f"
     },
     {
       "type": "add",
-      "id": "15ea7483979fc608",
+      "id": "bbceea1abd2948be",
       "item": {
         "text": "Remember, these images will be retrieved from a remote server with each viewing and may not be kept there long.",
         "type": "paragraph",
-        "id": "15ea7483979fc608"
+        "id": "bbceea1abd2948be"
       },
-      "date": 1444537858006
+      "date": 1444598183006,
+      "after": "a3d68c48f9ecf3fd"
     },
     {
       "type": "fork",
-      "date": 1444537925182
-    },
-    {
-      "type": "fork",
-      "date": 1444537926490
-    },
-    {
-      "type": "fork",
-      "site": "localhost:3000",
-      "date": 1444539047658
+      "date": 1444598342946
     }
   ]
 }

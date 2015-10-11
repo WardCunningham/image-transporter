@@ -26,8 +26,9 @@ def create title
 end
 
 def add item
+  after = @story.last ? @story.last[:id] : nil
   @story << item
-  @journal << {:type => :add, :id => item[:id], :item => item, :date => @date}
+  @journal << {:type => :add, :id => item[:id], :item => item, :date => @date, :after => after }
   @date += 1
 end
 
