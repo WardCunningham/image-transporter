@@ -1,0 +1,39 @@
+{
+  "title": "Image Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "7cf850580fce4794",
+      "text": "This service finds image tags in a page of html and assembles them into a wiki page with corresponding image items annotated with the source."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Image Transporter",
+        "story": []
+      },
+      "date": 1444504532449
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7cf850580fce4794"
+      },
+      "id": "7cf850580fce4794",
+      "type": "add",
+      "date": 1444504540051
+    },
+    {
+      "type": "edit",
+      "id": "7cf850580fce4794",
+      "item": {
+        "type": "paragraph",
+        "id": "7cf850580fce4794",
+        "text": "This service finds image tags in a page of html and assembles them into a wiki page with corresponding image items annotated with the source."
+      },
+      "date": 1444504738977
+    }
+  ]
+}
