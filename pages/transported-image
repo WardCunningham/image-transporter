@@ -1,0 +1,120 @@
+{
+  "title": "Transported Image",
+  "story": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+      "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]",
+      "type": "image",
+      "id": "8163e66d20aa5ac7"
+    },
+    {
+      "text": "Drag and drop this image into the desired page.",
+      "type": "paragraph",
+      "id": "71a37d72fafd8e6e"
+    },
+    {
+      "text": "First double click the image to be sure you've found the desired size.",
+      "type": "paragraph",
+      "id": "c384fda13eb40dd0"
+    },
+    {
+      "text": "The larger image below has been marked up in the less easily edited html.",
+      "type": "paragraph",
+      "id": "207b45e3391fad65"
+    },
+    {
+      "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
+      "type": "html",
+      "id": "e851c9f74f2a9b39"
+    },
+    {
+      "text": "Remember, these images will be retrieved from a remote server with each viewing and may not be kept there long.",
+      "type": "paragraph",
+      "id": "15ea7483979fc608"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "id": "085c5215d8b16d14",
+      "item": {
+        "title": "Transported Image"
+      },
+      "date": 1444537858000
+    },
+    {
+      "type": "add",
+      "id": "8163e66d20aa5ac7",
+      "item": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg",
+        "text": "Transported image. [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]",
+        "type": "image",
+        "id": "8163e66d20aa5ac7"
+      },
+      "date": 1444537858001
+    },
+    {
+      "type": "add",
+      "id": "71a37d72fafd8e6e",
+      "item": {
+        "text": "Drag and drop this image into the desired page.",
+        "type": "paragraph",
+        "id": "71a37d72fafd8e6e"
+      },
+      "date": 1444537858002
+    },
+    {
+      "type": "add",
+      "id": "c384fda13eb40dd0",
+      "item": {
+        "text": "First double click the image to be sure you've found the desired size.",
+        "type": "paragraph",
+        "id": "c384fda13eb40dd0"
+      },
+      "date": 1444537858003
+    },
+    {
+      "type": "add",
+      "id": "207b45e3391fad65",
+      "item": {
+        "text": "The larger image below has been marked up in the less easily edited html.",
+        "type": "paragraph",
+        "id": "207b45e3391fad65"
+      },
+      "date": 1444537858004
+    },
+    {
+      "type": "add",
+      "id": "e851c9f74f2a9b39",
+      "item": {
+        "text": "<div style=\"\n  padding: 12px;\n  background:#eee;\n  width:96%;\n  align=centered;\">\n\n<img style=\"\n  display:block;\n  margin:auto;\n  width:100%;\"\n  src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg\">\n\n<p class=caption>\n  Transported image.\n  [https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kheops-Pyramid.jpg/1280px-Kheops-Pyramid.jpg source]\n</p>\n</div>\n",
+        "type": "html",
+        "id": "e851c9f74f2a9b39"
+      },
+      "date": 1444537858005
+    },
+    {
+      "type": "add",
+      "id": "15ea7483979fc608",
+      "item": {
+        "text": "Remember, these images will be retrieved from a remote server with each viewing and may not be kept there long.",
+        "type": "paragraph",
+        "id": "15ea7483979fc608"
+      },
+      "date": 1444537858006
+    },
+    {
+      "type": "fork",
+      "date": 1444537925182
+    },
+    {
+      "type": "fork",
+      "date": 1444537926490
+    },
+    {
+      "type": "fork",
+      "site": "localhost:3000",
+      "date": 1444539047658
+    }
+  ]
+}

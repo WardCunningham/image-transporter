@@ -4,7 +4,43 @@
     {
       "type": "paragraph",
       "id": "7cf850580fce4794",
-      "text": "This service finds image tags in a page of html and assembles them into a wiki page with corresponding image items annotated with the source."
+      "text": "This service creates wiki pages with images in several forms without loading image data within the page. Use this for large or detailed images that will be stored remotely."
+    },
+    {
+      "type": "paragraph",
+      "id": "4295c1eb86190bfd",
+      "text": "Find freely licensed images and drag them to one of these available transporters."
+    },
+    {
+      "type": "transport",
+      "id": "41539361b8005c94",
+      "text": "POST http://port.fed.wiki.org:4010/image"
+    },
+    {
+      "type": "paragraph",
+      "id": "1c74674386de0f20",
+      "text": "Clone the transporter and run it locally. [https://github.com/WardCunningham/image-transporter github]"
+    },
+    {
+      "type": "transport",
+      "id": "db0bcf4c4ce9934c",
+      "text": "POST http://localhost:4010/image",
+      "alias": "41539361b8005c94"
+    },
+    {
+      "type": "paragraph",
+      "id": "54ec4bb5f0b21ebc",
+      "text": "Expect a new page in the lineup with images ready to be moved or even forked into place."
+    },
+    {
+      "type": "paragraph",
+      "id": "1587defc78444806",
+      "text": "See [[Transported Image]] for a sample result page with an image from Wikipedia Commons."
+    },
+    {
+      "type": "paragraph",
+      "id": "f075a50938a4a389",
+      "text": "Because these images do not include the image data in the page json their caption can be edited repeatedly without creating an unusually large journal."
     }
   ],
   "journal": [
@@ -34,6 +70,132 @@
         "text": "This service finds image tags in a page of html and assembles them into a wiki page with corresponding image items annotated with the source."
       },
       "date": 1444504738977
+    },
+    {
+      "type": "edit",
+      "id": "7cf850580fce4794",
+      "item": {
+        "type": "paragraph",
+        "id": "7cf850580fce4794",
+        "text": "This service creates wiki pages with images in several forms without loading image data within the page. Use this for large or detailed images that will be stored remotely."
+      },
+      "date": 1444537645441
+    },
+    {
+      "type": "add",
+      "id": "4295c1eb86190bfd",
+      "item": {
+        "type": "paragraph",
+        "id": "4295c1eb86190bfd",
+        "text": "Find publicly licensed images and drag them to one of these available transporters."
+      },
+      "after": "7cf850580fce4794",
+      "date": 1444538154851
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "41539361b8005c94",
+        "text": "POST http://port.fed.wiki.org:4010/image"
+      },
+      "after": "4295c1eb86190bfd",
+      "id": "41539361b8005c94",
+      "date": 1444538196960
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1c74674386de0f20"
+      },
+      "id": "1c74674386de0f20",
+      "type": "add",
+      "after": "41539361b8005c94",
+      "date": 1444538423323
+    },
+    {
+      "type": "edit",
+      "id": "1c74674386de0f20",
+      "item": {
+        "type": "paragraph",
+        "id": "1c74674386de0f20",
+        "text": "Clone the transporter and run it locally."
+      },
+      "date": 1444538457234
+    },
+    {
+      "type": "edit",
+      "id": "1c74674386de0f20",
+      "item": {
+        "type": "paragraph",
+        "id": "1c74674386de0f20",
+        "text": "Clone the transporter and run it locally. [https://github.com/WardCunningham/image-transporter github]"
+      },
+      "date": 1444538485817
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "db0bcf4c4ce9934c",
+        "text": "POST http://localhost:4010/image",
+        "alias": "41539361b8005c94"
+      },
+      "after": "1c74674386de0f20",
+      "id": "db0bcf4c4ce9934c",
+      "date": 1444538494791
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "54ec4bb5f0b21ebc"
+      },
+      "id": "54ec4bb5f0b21ebc",
+      "type": "add",
+      "after": "db0bcf4c4ce9934c",
+      "date": 1444538895902
+    },
+    {
+      "type": "edit",
+      "id": "54ec4bb5f0b21ebc",
+      "item": {
+        "type": "paragraph",
+        "id": "54ec4bb5f0b21ebc",
+        "text": "Expect a new page in the lineup with images ready to be moved or even forked into place."
+      },
+      "date": 1444538997060
+    },
+    {
+      "type": "add",
+      "id": "1587defc78444806",
+      "item": {
+        "type": "paragraph",
+        "id": "1587defc78444806",
+        "text": "See [[Transported Image]] for a sample result page with an image from Wikipedia Commons."
+      },
+      "after": "54ec4bb5f0b21ebc",
+      "date": 1444539033452
+    },
+    {
+      "type": "add",
+      "id": "f075a50938a4a389",
+      "item": {
+        "type": "paragraph",
+        "id": "f075a50938a4a389",
+        "text": "Because these images do not include the image data in the page json their caption can be edited repeatedly without creating an unusually large journal."
+      },
+      "after": "1587defc78444806",
+      "date": 1444539286640
+    },
+    {
+      "type": "edit",
+      "id": "4295c1eb86190bfd",
+      "item": {
+        "type": "paragraph",
+        "id": "4295c1eb86190bfd",
+        "text": "Find freely licensed images and drag them to one of these available transporters."
+      },
+      "date": 1444539905874
     }
   ]
 }
