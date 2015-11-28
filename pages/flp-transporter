@@ -1,0 +1,181 @@
+{
+  "title": "FLP Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "444c860769d468ad",
+      "text": "This service imports pages from the Federated Library Project, a wiki-like network of WordPress blogs. [http://hapgood.us/2015/10/27/write-for-the-federated-library-project/ post]"
+    },
+    {
+      "type": "paragraph",
+      "id": "b94e48432dccc3bc",
+      "text": "Newer versions of the FLP WP theme support option fedwiki=slug which returns a post as wiki json. Drag any such post to one of these available transporters."
+    },
+    {
+      "type": "transport",
+      "id": "41539361b8005c94",
+      "text": "POST http://port.fed.wiki.org:4010/flp"
+    },
+    {
+      "type": "paragraph",
+      "id": "1c74674386de0f20",
+      "text": "Clone the transporter and run it locally. [https://github.com/WardCunningham/image-transporter github]"
+    },
+    {
+      "type": "transport",
+      "id": "db0bcf4c4ce9934c",
+      "text": "POST http://localhost:4010/flp",
+      "alias": "41539361b8005c94"
+    },
+    {
+      "type": "paragraph",
+      "id": "54ec4bb5f0b21ebc",
+      "text": "Expect a new page in the lineup with library content ready to be forked into place."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "FLP Transporter",
+        "story": []
+      },
+      "date": 1448722272409
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "444c860769d468ad"
+      },
+      "id": "444c860769d468ad",
+      "type": "add",
+      "date": 1448722339699
+    },
+    {
+      "type": "edit",
+      "id": "444c860769d468ad",
+      "item": {
+        "type": "paragraph",
+        "id": "444c860769d468ad",
+        "text": "This service imports pages from the Federated Library Project, a wiki-like network of WordPress blogs."
+      },
+      "date": 1448722452964
+    },
+    {
+      "type": "edit",
+      "id": "444c860769d468ad",
+      "item": {
+        "type": "paragraph",
+        "id": "444c860769d468ad",
+        "text": "This service imports pages from the Federated Library Project, a wiki-like network of WordPress blogs. [http://hapgood.us/2015/10/27/write-for-the-federated-library-project/ post]"
+      },
+      "date": 1448722810830
+    },
+    {
+      "type": "add",
+      "id": "b94e48432dccc3bc",
+      "item": {
+        "type": "paragraph",
+        "id": "b94e48432dccc3bc",
+        "text": "Experimental versions of the FLP WP theme support the fedwiki=slug which returns a post as wiki json. Drag any post in this theme to one of these available transporters."
+      },
+      "after": "444c860769d468ad",
+      "date": 1448723156155
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "41539361b8005c94",
+        "text": "POST http://port.fed.wiki.org:4010/flp"
+      },
+      "after": "b94e48432dccc3bc",
+      "id": "41539361b8005c94",
+      "date": 1448723167251
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "1c74674386de0f20",
+        "text": "Clone the transporter and run it locally. [https://github.com/WardCunningham/image-transporter github]"
+      },
+      "after": "41539361b8005c94",
+      "id": "1c74674386de0f20",
+      "date": 1448723173613
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "db0bcf4c4ce9934c",
+        "text": "POST http://localhost:4010/flp",
+        "alias": "41539361b8005c94"
+      },
+      "after": "1c74674386de0f20",
+      "id": "db0bcf4c4ce9934c",
+      "date": 1448723178303
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "54ec4bb5f0b21ebc",
+        "text": "Expect a new page in the lineup with images ready to be moved or even forked into place."
+      },
+      "after": "db0bcf4c4ce9934c",
+      "id": "54ec4bb5f0b21ebc",
+      "date": 1448723218955
+    },
+    {
+      "type": "edit",
+      "id": "54ec4bb5f0b21ebc",
+      "item": {
+        "type": "paragraph",
+        "id": "54ec4bb5f0b21ebc",
+        "text": "Expect a new page in the lineup with library content ready to be forked into place."
+      },
+      "date": 1448723305302
+    },
+    {
+      "type": "edit",
+      "id": "b94e48432dccc3bc",
+      "item": {
+        "type": "paragraph",
+        "id": "b94e48432dccc3bc",
+        "text": "Newer versions of the FLP WP theme support option fedwiki=slug which returns a post as wiki json. Drag any post in this theme to one of these available transporters."
+      },
+      "date": 1448723843545
+    },
+    {
+      "type": "edit",
+      "id": "b94e48432dccc3bc",
+      "item": {
+        "type": "paragraph",
+        "id": "b94e48432dccc3bc",
+        "text": "Newer versions of the FLP WP theme support option fedwiki=slug which returns a post as wiki json. Drag any post from this theme to one of these available transporters."
+      },
+      "date": 1448723870238
+    },
+    {
+      "type": "edit",
+      "id": "b94e48432dccc3bc",
+      "item": {
+        "type": "paragraph",
+        "id": "b94e48432dccc3bc",
+        "text": "Newer versions of the FLP WP theme support option fedwiki=slug which returns a post as wiki json. Drag any post themed such to one of these available transporters."
+      },
+      "date": 1448723903869
+    },
+    {
+      "type": "edit",
+      "id": "b94e48432dccc3bc",
+      "item": {
+        "type": "paragraph",
+        "id": "b94e48432dccc3bc",
+        "text": "Newer versions of the FLP WP theme support option fedwiki=slug which returns a post as wiki json. Drag any such post to one of these available transporters."
+      },
+      "date": 1448724008272
+    }
+  ]
+}

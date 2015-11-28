@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 require './page'
+require 'net/http'
 
 set :bind, '0.0.0.0'
 set :port, 4010
@@ -79,6 +80,12 @@ post "/image", :provides => :json do
     end
     
   end
+end
+
+post "/flp", :provides => :json do
+  params = JSON.parse(request.env["rack.input"].read)
+  ignore, ignore, site, slug, ignore = params['text'].split('/')
+  Net::HTTP.get(site, "/?fedwiki=#{slug}")
 end
 
 get '/system/sitemap.json' do
