@@ -58,7 +58,10 @@ get '/' do
     </head>
     <body style="padding:40px; text-align:center;">
       <h1>Image Transporter</h1>
-      <p><a href="http://ward.asia.wiki.org/transport-plugin.html">details</a></p>
+      <p><a id=link target="_blank" href="http://ward.asia.wiki.org/">details</a></p>
+      <script>
+        link.href += location.host + "/welcome-visitors"
+      </script>
     </body>
   </html>
 EOF
