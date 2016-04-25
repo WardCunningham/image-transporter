@@ -14,7 +14,7 @@
     {
       "type": "transport",
       "id": "41539361b8005c94",
-      "text": "POST http://port.fed.wiki.org:4010/image"
+      "text": "POST http://fed.wiki.org:4010/image"
     },
     {
       "type": "paragraph",
@@ -196,6 +196,16 @@
         "text": "Find freely licensed images and drag them to one of these available transporters."
       },
       "date": 1444539905874
+    },
+    {
+      "type": "edit",
+      "id": "41539361b8005c94",
+      "item": {
+        "type": "transport",
+        "id": "41539361b8005c94",
+        "text": "POST http://fed.wiki.org:4010/image"
+      },
+      "date": 1461553116186
     }
   ]
 }

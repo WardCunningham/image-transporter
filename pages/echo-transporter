@@ -1,0 +1,124 @@
+{
+  "title": "Echo Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "7dcc6d2f11f4ec11",
+      "text": "Use this transporter to see what parameters will be available when a payload is sent to some other transporter."
+    },
+    {
+      "type": "transport",
+      "id": "b39f0e7ac4a48020",
+      "text": "POST http://fed.wiki.org:4010/echo"
+    },
+    {
+      "type": "paragraph",
+      "id": "573924156e00252a",
+      "text": "Many things will influence transporting. Try echoing drops from all of these sources."
+    },
+    {
+      "type": "markdown",
+      "id": "7a37f7a8b22329f9",
+      "text": "* which Transport plugin is in use\n* which origin version of wiki is serving it\n* which browser and browser version\n* which operating system host the browser\n* which window is the source of a drag\n* which browser is the source of a drag"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Echo Transporter",
+        "story": []
+      },
+      "date": 1461552908179
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7dcc6d2f11f4ec11"
+      },
+      "id": "7dcc6d2f11f4ec11",
+      "type": "add",
+      "date": 1461552911508
+    },
+    {
+      "type": "edit",
+      "id": "7dcc6d2f11f4ec11",
+      "item": {
+        "type": "paragraph",
+        "id": "7dcc6d2f11f4ec11",
+        "text": "Use this transporter to see what parameters will be available when a payload is sent to some other transporter."
+      },
+      "date": 1461553078866
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b39f0e7ac4a48020"
+      },
+      "id": "b39f0e7ac4a48020",
+      "type": "add",
+      "after": "7dcc6d2f11f4ec11",
+      "date": 1461553142642
+    },
+    {
+      "type": "edit",
+      "id": "b39f0e7ac4a48020",
+      "item": {
+        "type": "transport",
+        "id": "b39f0e7ac4a48020",
+        "text": "POST fed.wiki.org:4010/echo"
+      },
+      "date": 1461553173523
+    },
+    {
+      "type": "edit",
+      "id": "b39f0e7ac4a48020",
+      "item": {
+        "type": "transport",
+        "id": "b39f0e7ac4a48020",
+        "text": "POST http://fed.wiki.org:4010/echo"
+      },
+      "date": 1461553192228
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "573924156e00252a"
+      },
+      "id": "573924156e00252a",
+      "type": "add",
+      "after": "b39f0e7ac4a48020",
+      "date": 1461553362832
+    },
+    {
+      "type": "edit",
+      "id": "573924156e00252a",
+      "item": {
+        "type": "paragraph",
+        "id": "573924156e00252a",
+        "text": "Many things will influence transporting. Try echoing drops from all of these sources."
+      },
+      "date": 1461553503018
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7a37f7a8b22329f9"
+      },
+      "id": "7a37f7a8b22329f9",
+      "type": "add",
+      "after": "573924156e00252a",
+      "date": 1461553505261
+    },
+    {
+      "type": "edit",
+      "id": "7a37f7a8b22329f9",
+      "item": {
+        "type": "markdown",
+        "id": "7a37f7a8b22329f9",
+        "text": "* which Transport plugin is in use\n* which origin version of wiki is serving it\n* which browser and browser version\n* which operating system host the browser\n* which window is the source of a drag\n* which browser is the source of a drag"
+      },
+      "date": 1461553797396
+    }
+  ]
+}
