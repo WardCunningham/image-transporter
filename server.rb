@@ -91,6 +91,14 @@ post "/flp", :provides => :json do
   Net::HTTP.get(site, "/?fedwiki=#{slug}")
 end
 
+post "/echo", :provides => :json do
+  params = JSON.parse(request.env["rack.input"].read)
+  page 'Transport Parameters' do
+    paragraph "These are all of the parameters sent in the post body of the transport request."
+    item 'html', {:text => "<pre>#{JSON.pretty_generate params}"}
+  end
+end
+
 get '/system/sitemap.json' do
   send_file 'status/sitemap.json'
 end
