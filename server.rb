@@ -36,6 +36,31 @@ END
     paragraph "Remember, these images will be retrieved from a remote server with each viewing and may not be kept there long."
   end
 
+  def quote (string)
+    "\"#{string}\""
+  end
+
+  def dot (graphs)
+    graph = Hash.new { |hash, key| hash[key] = [] }
+    graphs.each do | obj |
+      obj.each do | from, tos |
+        have = graph[from]
+        graph[from] = [have, tos].flatten.uniq
+      end
+    end
+    dot = []
+    graph.each do | from, tos |
+      tos.each do | to |
+        dot << "#{quote from} -> #{quote to};"
+      end
+    end
+    "digraph { #{dot.join "\n"} }"
+  end
+
+  def svg (dot)
+    `echo '#{dot}' | dot -Tsvg | tail -n +7`
+  end
+
 end
 
 before do
@@ -81,7 +106,6 @@ post "/image", :provides => :json do
       paragraph "text: #{params['text']}"
       paragraph "html: #{params['html']}"
     end
-    
   end
 end
 
@@ -96,6 +120,16 @@ post "/echo", :provides => :json do
   page 'Transport Parameters' do
     paragraph "These are all of the parameters sent in the post body of the transport request."
     item 'html', {:text => "<pre>#{JSON.pretty_generate params}"}
+  end
+end
+
+post "/graphviz", :provides => :json do
+  params = JSON.parse(request.env["rack.input"].read)
+  page 'Transported Graphviz' do
+    paragraph "Using all default parameters."
+    xx = dot params
+    puts xx
+    item 'html', {:text => "<pre>#{xx}</pre>"}
   end
 end
 
