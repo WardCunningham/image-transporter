@@ -2,6 +2,7 @@ require 'sinatra'
 require 'json'
 require './page'
 require 'net/http'
+require 'base64'
 
 set :bind, '0.0.0.0'
 set :port, 4010
@@ -127,9 +128,9 @@ post "/graphviz", :provides => :json do
   params = JSON.parse(request.env["rack.input"].read)
   page 'Transported Graphviz' do
     paragraph "Using all default parameters."
-    xx = dot params
-    puts xx
-    item 'html', {:text => "<pre>#{xx}</pre>"}
+    svg = svg dot params
+    puts svg
+    item 'html', {:text => "<img href='data:image/png;base64,#{Base64.encode64(svg)}'>"}
   end
 end
 
