@@ -41,7 +41,7 @@ END
     "\"#{string}\""
   end
 
-  def dot (graphs)
+  def merge (graphs)
     graph = Hash.new { |hash, key| hash[key] = [] }
     graphs.each do | obj |
       obj.each do | from, tos |
@@ -49,17 +49,21 @@ END
         graph[from] = [have, tos].flatten.uniq
       end
     end
+    graph
+  end
+
+  def dot (graph)
     dot = []
     graph.each do | from, tos |
       tos.each do | to |
         dot << "#{quote from} -> #{quote to};"
       end
     end
-    "digraph { #{dot.join "\n"} }"
+    "digraph { node [style=filled fillcolor=paleGreen]; #{dot.join "\n"} }"
   end
 
-  def svg (dot)
-    `echo '#{dot}' | dot -Tsvg | tail -n +7`
+  def svg (file, dot)
+    `echo '#{dot}' | dot -Tsvg | tee public/#{file} | tail -n +7`
   end
 
 end
@@ -127,10 +131,15 @@ end
 post "/graphviz", :provides => :json do
   params = JSON.parse(request.env["rack.input"].read)
   page 'Transported Graphviz' do
-    paragraph "Using all default parameters."
-    svg = svg dot params
-    puts svg
-    item 'html', {:text => "<img href='data:image/png;base64,#{Base64.encode64(svg)}'>"}
+    mergeout = merge params
+    outfile = "#{(rand(1000)+1000).to_s[-3..-1]}.svg"
+    dotout = dot mergeout
+    svgout = svg outfile, dotout
+    paragraph "Drag this graph to any page. You can also fetch a short-lived file. [http://localhost:4010/#{outfile} svg]"
+    item 'html', {:text => "<img width=420 src='data:image/svg+xml;base64,#{Base64.encode64 svgout}'>"}
+    item 'html', {:text => "<h3>Debug</h3>"}
+    item 'html', {:text => "<pre>#{JSON.pretty_generate mergeout}</pre>"}
+    item 'html', {:text => "<pre>#{dotout}</pre>"}
   end
 end
 
