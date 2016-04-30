@@ -141,7 +141,9 @@ post "/graphviz", :provides => :json do
     outfile = "#{(rand(1000)+1000).to_s[-3..-1]}.svg"
     dotout = dot mergeout
     svgout = svg outfile, dotout
-    paragraph "Drag this graph to any page. You can also fetch a short-lived file. [http://localhost:4010/#{outfile} svg]"
+    paragraph "This graph represents the merge of all graph-source to the left of the transport page.
+    Drag it to any page. Fetch a short-lived static file with the same svg diagram.
+    [http://#{request.host_with_port}/#{outfile} page]"
     item 'html', {:text => "<img width=420 src='data:image/svg+xml;base64,#{Base64.encode64 svgout}'>"}
     item 'html', {:text => "<h3>Debug</h3>"}
     item 'html', {:text => "<pre>#{JSON.pretty_generate mergeout}</pre>"}
