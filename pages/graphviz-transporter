@@ -1,0 +1,157 @@
+{
+  "title": "Graphviz Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "ce152936763b099e",
+      "text": "This service accepts posts of Graph plugin assembled by the Transport plugin's GRAPH source modifier. It runs Graphviz's dot layout engine and returns an svg image wrapped in the Html plugin."
+    },
+    {
+      "type": "paragraph",
+      "id": "d898ca321418ddae",
+      "text": "Graph(s) ⇒ Transport ⇒ here ⇒ Html <img>"
+    },
+    {
+      "type": "transport",
+      "id": "6502c21844eb758e",
+      "text": "GRAPH POST http://fed.wiki.org:4010/graphviz"
+    },
+    {
+      "type": "paragraph",
+      "id": "4fc7c1af42ae5efd",
+      "text": "As of this writing modifications to various plugins may not be widely distributed. One may need to build from source."
+    },
+    {
+      "type": "reference",
+      "id": "d35008b1fc7109d8",
+      "site": "ward.asia.wiki.org",
+      "slug": "knowledge-graphing",
+      "title": "Knowledge Graphing",
+      "text": "We desire to describe and manipulate graphs within wiki for purposes other than exploring wiki itself. [https://github.com/fedwiki/wiki/issues/63 github]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Graphviz Transporter",
+        "story": []
+      },
+      "date": 1462121017488
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ce152936763b099e"
+      },
+      "id": "ce152936763b099e",
+      "type": "add",
+      "date": 1462121036743
+    },
+    {
+      "type": "edit",
+      "id": "ce152936763b099e",
+      "item": {
+        "type": "paragraph",
+        "id": "ce152936763b099e",
+        "text": "This service accepts posts of Graph plugin assembled by the Transport plugin's GRAPH source modifier. It runs Graphviz's dot layout engine and returns an svg image wrapped in the Html plugin."
+      },
+      "date": 1462121309605
+    },
+    {
+      "type": "add",
+      "id": "d898ca321418ddae",
+      "item": {
+        "type": "paragraph",
+        "id": "d898ca321418ddae",
+        "text": "Graph(s) ⇒ Transport ⇒ here ⇒ Html"
+      },
+      "after": "ce152936763b099e",
+      "date": 1462121382257
+    },
+    {
+      "type": "edit",
+      "id": "d898ca321418ddae",
+      "item": {
+        "type": "paragraph",
+        "id": "d898ca321418ddae",
+        "text": "Graph(s) ⇒ Transport ⇒ here ⇒ Html <img>"
+      },
+      "date": 1462121395219
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "6502c21844eb758e",
+        "text": "GRAPH POST http://localhost:4010/graphviz"
+      },
+      "after": "d898ca321418ddae",
+      "id": "6502c21844eb758e",
+      "date": 1462121505455
+    },
+    {
+      "type": "edit",
+      "id": "6502c21844eb758e",
+      "item": {
+        "type": "transport",
+        "id": "6502c21844eb758e",
+        "text": "GRAPH POST http://fed.wiki.org:4010/graphviz"
+      },
+      "date": 1462121522214
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4fc7c1af42ae5efd"
+      },
+      "id": "4fc7c1af42ae5efd",
+      "type": "add",
+      "after": "6502c21844eb758e",
+      "date": 1462121564146
+    },
+    {
+      "type": "edit",
+      "id": "4fc7c1af42ae5efd",
+      "item": {
+        "type": "paragraph",
+        "id": "4fc7c1af42ae5efd",
+        "text": "As of this writing modifications to various plugins may not be widely distributed."
+      },
+      "date": 1462121610220
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d35008b1fc7109d8"
+      },
+      "id": "d35008b1fc7109d8",
+      "type": "add",
+      "after": "4fc7c1af42ae5efd",
+      "date": 1462121612965
+    },
+    {
+      "type": "edit",
+      "id": "d35008b1fc7109d8",
+      "item": {
+        "type": "reference",
+        "id": "d35008b1fc7109d8",
+        "site": "ward.asia.wiki.org",
+        "slug": "knowledge-graphing",
+        "title": "Knowledge Graphing",
+        "text": "We desire to describe and manipulate graphs within wiki for purposes other than exploring wiki itself. [https://github.com/fedwiki/wiki/issues/63 github]"
+      },
+      "date": 1462121620214
+    },
+    {
+      "type": "edit",
+      "id": "4fc7c1af42ae5efd",
+      "item": {
+        "type": "paragraph",
+        "id": "4fc7c1af42ae5efd",
+        "text": "As of this writing modifications to various plugins may not be widely distributed. One may need to build from source."
+      },
+      "date": 1462121643354
+    }
+  ]
+}
