@@ -39,10 +39,10 @@ END
 
   def quote (string)
     # replacing \n with space should reverse all substitutions
-    string = string.gsub(/^(\w+) (\w+)$/, '\1\n\2')
-    string = string.gsub(/^(\w+) (\w+) (\w+)$/, '\1 \2\n\3')
+    string = string.gsub(/^([\w-]+) ([\w-]+)$/, '\1\n\2')
+    string = string.gsub(/^([\w-]+) ([\w-]+) ([\w-]+)$/, '\1 \2\n\3')
     string = string.gsub(/^(.*?)\((.*?)\)(.*)$/, '\1\n(\2)\n\3')
-    string = string.gsub(/^(\w+) (\w+\.?) (\w+) (\w+)$/, '\1 \2\n\3 \4')
+    string = string.gsub(/^([\w-]+) ([\w-]+\.?) ([\w-]+) ([\w-]+)$/, '\1 \2\n\3 \4')
     string = string.gsub(/^(Union of) (.*)$/, '\1\n\2')
     "\"#{string}\""
   end
