@@ -81,7 +81,7 @@ end
 # https://www.snip2code.com/Snippet/85077/Sinatra-with-cross-origin-AJAX-requests-
 options '*' do
   headers 'Access-Control-Allow-Headers' => 'Accept, Authorization, Content-Type',
-          'Access-Control-Allow-Methods' => 'GET, POST, PUT, PATCH, DELETE OPTIONS, LINK, UNLINK',
+          'Access-Control-Allow-Methods' => 'GET, POST, PUT, PATCH, DELETE, OPTIONS, LINK, UNLINK',
           'Access-Control-Max-Age'       => '600'
 end
 
