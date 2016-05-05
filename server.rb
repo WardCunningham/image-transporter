@@ -151,6 +151,15 @@ post "/graphviz", :provides => :json do
   end
 end
 
+get '/graphviz-gallery.json', :provides => :json do
+  page 'Graphviz Gallery' do
+    paragraph "We keep transported graphs until the random filename comes up for reuse."
+    files = `cd public; ls -tr`.split("\n").select{|name| name=~/\.svg$/}
+    links = files.map{|name| "[http://#{request.host_with_port}/#{name} #{name.gsub /\.svg/, ''}]"}
+    paragraph links.join ' '
+  end
+end
+
 get '/system/sitemap.json' do
   send_file 'status/sitemap.json'
 end

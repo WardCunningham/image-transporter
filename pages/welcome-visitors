@@ -45,6 +45,11 @@
     },
     {
       "type": "paragraph",
+      "id": "0917334f5b66d090",
+      "text": "[[Graphviz Gallery]]"
+    },
+    {
+      "type": "paragraph",
       "id": "ee416d431ebf4fb4",
       "text": "You can edit your copy of these pages. Press [+] to add more writing spaces. Read [[How to Wiki]] for more ideas. Follow [[Recent Changes]] here and nearby."
     }
@@ -177,6 +182,17 @@
       },
       "after": "60e3e3d67128d46e",
       "date": 1462120858562
+    },
+    {
+      "type": "add",
+      "id": "0917334f5b66d090",
+      "item": {
+        "type": "paragraph",
+        "id": "0917334f5b66d090",
+        "text": "[[Graphviz Gallery]]"
+      },
+      "after": "feda0933d318cc1c",
+      "date": 1462470498854
     }
   ]
 }
