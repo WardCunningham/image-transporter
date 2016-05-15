@@ -1,0 +1,115 @@
+{
+  "title": "Clean Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "887d79d8bd7c8f74",
+      "text": "This service removes from the journal of any history of items not present in the current story. Drop a page flag to preview a cleaned version."
+    },
+    {
+      "type": "transport",
+      "id": "7cd1b99dfdb009b5",
+      "text": "POST http://fed.wiki.org:4010/clean"
+    },
+    {
+      "type": "paragraph",
+      "id": "f7986c1f719ec1b8",
+      "text": "A cleaned journal will not have any deletes unless the deleted item was subsequently added back to the story."
+    },
+    {
+      "type": "paragraph",
+      "id": "3b8439bfacc4b370",
+      "text": "A cleaned journal will still explain how the current story items came to be."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Clean Transporter",
+        "story": []
+      },
+      "date": 1463279237974
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "887d79d8bd7c8f74"
+      },
+      "id": "887d79d8bd7c8f74",
+      "type": "add",
+      "date": 1463279254828
+    },
+    {
+      "type": "edit",
+      "id": "887d79d8bd7c8f74",
+      "item": {
+        "type": "paragraph",
+        "id": "887d79d8bd7c8f74",
+        "text": "This service cleans the journal of any history of items not present in the current story. Drop a page flag to preview a cleaned version."
+      },
+      "date": 1463279618286
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7cd1b99dfdb009b5"
+      },
+      "id": "7cd1b99dfdb009b5",
+      "type": "add",
+      "after": "887d79d8bd7c8f74",
+      "date": 1463279634248
+    },
+    {
+      "type": "edit",
+      "id": "7cd1b99dfdb009b5",
+      "item": {
+        "type": "transport",
+        "id": "7cd1b99dfdb009b5",
+        "text": "POST http://fed.wiki.org:4010/clean"
+      },
+      "date": 1463279662181
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f7986c1f719ec1b8"
+      },
+      "id": "f7986c1f719ec1b8",
+      "type": "add",
+      "after": "7cd1b99dfdb009b5",
+      "date": 1463279697311
+    },
+    {
+      "type": "edit",
+      "id": "f7986c1f719ec1b8",
+      "item": {
+        "type": "paragraph",
+        "id": "f7986c1f719ec1b8",
+        "text": "A cleaned journal will not have any deletes unless the deleted item was subsequently added back to the story."
+      },
+      "date": 1463279739540
+    },
+    {
+      "type": "add",
+      "id": "3b8439bfacc4b370",
+      "item": {
+        "type": "paragraph",
+        "id": "3b8439bfacc4b370",
+        "text": "A cleaned journal will still explain how the current story items came to be."
+      },
+      "after": "f7986c1f719ec1b8",
+      "date": 1463279972246
+    },
+    {
+      "type": "edit",
+      "id": "887d79d8bd7c8f74",
+      "item": {
+        "type": "paragraph",
+        "id": "887d79d8bd7c8f74",
+        "text": "This service removes from the journal of any history of items not present in the current story. Drop a page flag to preview a cleaned version."
+      },
+      "date": 1463280098637
+    }
+  ]
+}

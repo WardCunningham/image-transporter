@@ -134,6 +134,23 @@ post "/echo", :provides => :json do
   end
 end
 
+post "/clean", :provides => :json do
+  begin
+    params = JSON.parse(request.env["rack.input"].read)
+    p = params['url'].split('/')
+    slug = p[-1]
+    site = p[-2] == 'view' ? p[2] : p[-2]
+    page = JSON.parse Net::HTTP.get(site, "/#{slug}.json")
+    want = page['story'].map{ |item| item['id'] }.uniq
+    page['journal'] = page['journal'].select{ |action| !action['id'] or want.include? action['id'] }
+    return JSON.pretty_generate page
+  rescue
+    page 'Oops' do
+      paragraph "We expected a page's flag to be droped for journal cleaning."
+    end
+  end
+end
+
 post "/graphviz", :provides => :json do
   params = JSON.parse(request.env["rack.input"].read)
   page 'Transported Graphviz' do
