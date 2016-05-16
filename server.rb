@@ -146,7 +146,7 @@ post "/clean", :provides => :json do
     return JSON.pretty_generate page
   rescue
     page 'Oops' do
-      paragraph "We expected a page's flag to be droped for journal cleaning."
+      paragraph "We expected a page's flag to be dropped for journal cleaning."
     end
   end
 end
