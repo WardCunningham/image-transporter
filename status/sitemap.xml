@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://localhost:3030/clean-transporter.html</loc>
+    <lastmod>2016-05-15</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:3030/echo-transporter.html</loc>
     <lastmod>2016-04-25</lastmod>
   </url>
@@ -10,7 +14,7 @@
   </url>
   <url>
     <loc>http://localhost:3030/graphviz-transporter.html</loc>
-    <lastmod>2016-05-01</lastmod>
+    <lastmod>2016-07-09</lastmod>
   </url>
   <url>
     <loc>http://localhost:3030/image-transporter.html</loc>
@@ -22,10 +26,10 @@
   </url>
   <url>
     <loc>http://localhost:3030/welcome-visitors.html</loc>
-    <lastmod>2016-05-15</lastmod>
+    <lastmod>2016-07-09</lastmod>
   </url>
   <url>
-    <loc>http://localhost:3030/clean-transporter.html</loc>
-    <lastmod>2016-05-15</lastmod>
+    <loc>http://localhost:3030/cite-transporter.html</loc>
+    <lastmod>2016-07-09</lastmod>
   </url>
 </urlset>

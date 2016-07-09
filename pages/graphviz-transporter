@@ -12,6 +12,11 @@
       "text": "Graph(s) ⇒ Transport ⇒ here ⇒ Html <img>"
     },
     {
+      "type": "paragraph",
+      "id": "0917334f5b66d090",
+      "text": "Recent graphs are saved in the [[Graphviz Gallery]]."
+    },
+    {
       "type": "transport",
       "id": "6502c21844eb758e",
       "text": "GRAPH POST http://fed.wiki.org:4010/graphviz"
@@ -152,6 +157,27 @@
         "text": "As of this writing modifications to various plugins may not be widely distributed. One may need to build from source."
       },
       "date": 1462121643354
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "0917334f5b66d090",
+        "text": "[[Graphviz Gallery]]"
+      },
+      "after": "d898ca321418ddae",
+      "id": "0917334f5b66d090",
+      "date": 1468096057873
+    },
+    {
+      "type": "edit",
+      "id": "0917334f5b66d090",
+      "item": {
+        "type": "paragraph",
+        "id": "0917334f5b66d090",
+        "text": "Recent graphs are saved in the [[Graphviz Gallery]]."
+      },
+      "date": 1468096081669
     }
   ]
 }

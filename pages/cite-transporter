@@ -1,0 +1,116 @@
+{
+  "title": "Cite Transporter",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c245f8661c17b625",
+      "text": "This transporter constructs Federation Directory citation pages with a Reference and a shortened synopsis ready for further curation."
+    },
+    {
+      "type": "transport",
+      "id": "bc0b3f60c948626e",
+      "text": "POST http://fed.wiki.org:4010/cite"
+    },
+    {
+      "type": "reference",
+      "id": "904cbd5d33e074b9",
+      "site": "sites.fed.wiki",
+      "slug": "federation-directory",
+      "title": "Federation Directory",
+      "text": "Here we maintain a Roster of federation directories. Directories will have a well groomed sitemap optimized for finding sites by keyword search."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Cite Transporter",
+        "story": []
+      },
+      "date": 1468096108032
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c245f8661c17b625"
+      },
+      "id": "c245f8661c17b625",
+      "type": "add",
+      "date": 1468096109772
+    },
+    {
+      "type": "edit",
+      "id": "c245f8661c17b625",
+      "item": {
+        "type": "paragraph",
+        "id": "c245f8661c17b625",
+        "text": "This transporter constructs "
+      },
+      "date": 1468096138992
+    },
+    {
+      "type": "edit",
+      "id": "c245f8661c17b625",
+      "item": {
+        "type": "paragraph",
+        "id": "c245f8661c17b625",
+        "text": "This transporter constructs federation directory citation pages with a Reference and a shortened synopsis ready for further curation."
+      },
+      "date": 1468096266061
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "transport",
+        "id": "bc0b3f60c948626e",
+        "text": "POST http://localhost:4010/cite"
+      },
+      "after": "c245f8661c17b625",
+      "id": "bc0b3f60c948626e",
+      "date": 1468096309626
+    },
+    {
+      "type": "edit",
+      "id": "bc0b3f60c948626e",
+      "item": {
+        "type": "transport",
+        "id": "bc0b3f60c948626e",
+        "text": "POST http://fed.wiki.org:4010/cite"
+      },
+      "date": 1468096324925
+    },
+    {
+      "type": "edit",
+      "id": "c245f8661c17b625",
+      "item": {
+        "type": "paragraph",
+        "id": "c245f8661c17b625",
+        "text": "This transporter constructs Federation Directory citation pages with a Reference and a shortened synopsis ready for further curation."
+      },
+      "date": 1468096408187
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "904cbd5d33e074b9"
+      },
+      "id": "904cbd5d33e074b9",
+      "type": "add",
+      "after": "bc0b3f60c948626e",
+      "date": 1468096413886
+    },
+    {
+      "type": "edit",
+      "id": "904cbd5d33e074b9",
+      "item": {
+        "type": "reference",
+        "id": "904cbd5d33e074b9",
+        "site": "sites.fed.wiki",
+        "slug": "federation-directory",
+        "title": "Federation Directory",
+        "text": "Here we maintain a Roster of federation directories. Directories will have a well groomed sitemap optimized for finding sites by keyword search."
+      },
+      "date": 1468096417879
+    }
+  ]
+}

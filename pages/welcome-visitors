@@ -45,13 +45,13 @@
     },
     {
       "type": "paragraph",
-      "id": "0917334f5b66d090",
-      "text": "[[Graphviz Gallery]]"
+      "id": "1db9e3a50a23c0ee",
+      "text": "[[Clean Transporter]]"
     },
     {
       "type": "paragraph",
-      "id": "1db9e3a50a23c0ee",
-      "text": "[[Clean Transporter]]"
+      "id": "88e1bb7923ad2041",
+      "text": "[[Cite Transporter]]"
     },
     {
       "type": "paragraph",
@@ -209,6 +209,22 @@
       },
       "after": "0917334f5b66d090",
       "date": 1463279225434
+    },
+    {
+      "type": "remove",
+      "id": "0917334f5b66d090",
+      "date": 1468096057865
+    },
+    {
+      "type": "add",
+      "id": "88e1bb7923ad2041",
+      "item": {
+        "type": "paragraph",
+        "id": "88e1bb7923ad2041",
+        "text": "[[Cite Transporter]]"
+      },
+      "after": "1db9e3a50a23c0ee",
+      "date": 1468096101726
     }
   ]
 }

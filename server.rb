@@ -177,6 +177,26 @@ get '/graphviz-gallery.json', :provides => :json do
   end
 end
 
+post "/cite", :provides => :json do
+  begin
+    params = JSON.parse(request.env["rack.input"].read)
+    p = params['url'].split('/')
+    slug = p[-1]
+    site = p[-2] == 'view' ? p[2] : p[-2]
+    cited = JSON.parse Net::HTTP.get(site, "/#{slug}.json")
+    page site do
+      synopsis = cited['story'][0]['text'] || 'Add synopsis here.'
+      paragraph synopsis[0..100]
+      item 'reference', {:site => site, :title => cited['title'], :text => synopsis}
+    end
+  rescue
+    page 'Oops' do
+      paragraph "We expected a page's flag to be dropped for a directory citation. Params should include url of federated wiki page."
+      item 'code', {:text => JSON.pretty_generate(params)}
+    end
+  end
+end
+
 get '/system/sitemap.json' do
   send_file 'status/sitemap.json'
 end
