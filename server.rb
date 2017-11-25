@@ -60,14 +60,21 @@ END
     graph
   end
 
-  def dot (graph)
+  def dot (graph, style)
     dot = []
+    if style=='files'
+      (graph.keys + graph.values).uniq.each do | node |
+        dot << "#{quote node} [fillcolor=lightBlue]" if node =~ /activity/
+        dot << "#{quote node} [fillcolor=bisque]" if node =~ /sites|scrape/
+        dot << "#{quote node} [style=\"filled,rounded\"]" if node =~ /page|file|directory|rollup/
+      end
+    end
     graph.each do | from, tos |
       tos.each do | to |
         dot << "#{quote from} -> #{quote to};"
       end
     end
-    "digraph { node [style=filled fillcolor=paleGreen]; #{dot.join "\n"} }"
+    "digraph { node [shape=box style=filled fillcolor=paleGreen]; #{dot.join "\n"} }"
   end
 
   def svg (file, dot)
@@ -154,11 +161,12 @@ post "/clean", :provides => :json do
 end
 
 post "/graphviz", :provides => :json do
+  style = params['style']
   params = JSON.parse(request.env["rack.input"].read)
   page 'Transported Graphviz' do
     mergeout = merge params
     outfile = "#{(rand(1000)+1000).to_s[-3..-1]}.svg"
-    dotout = dot mergeout
+    dotout = dot mergeout, style
     svgout = svg outfile, dotout
     paragraph "This graph represents the merge of all graph-source to the left of the transport page.
     Drag it to any page. Fetch a short-lived static file with the same svg diagram.
