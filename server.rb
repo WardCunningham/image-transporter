@@ -215,10 +215,10 @@ get '/favicon.png' do
   send_file 'status/favicon.png'
 end
 
-get %r{^/([a-z0-9-]+)\.json$} do |slug|
+get %r{/([a-z0-9-]+)\.json} do |slug|
   send_file "pages/#{slug}"
 end
 
-get %r{^/view/} do
+get %r{/view/} do
   redirect '/'
 end
