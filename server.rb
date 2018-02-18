@@ -95,11 +95,7 @@ options '*' do
 end
 
 get '/ls' do
-  "<pre>" + `ls -la` + 'ls -la public'
-end
-
-get '/pwd' do
-  `pwd`
+  "<pre>" + `ls -la` + "\n" + `ls -la public`
 end
 
 get '/' do
