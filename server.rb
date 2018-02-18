@@ -94,6 +94,13 @@ options '*' do
           'Access-Control-Max-Age'       => '600'
 end
 
+get '/ls' do
+  `ls -la`
+end
+
+get '/pwd' do
+  `pwd`
+end
 
 get '/' do
 <<EOF
