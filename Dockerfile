@@ -5,7 +5,8 @@ RUN gem install puma sinatra \
  && apt-get -y install graphviz
 
 COPY ./ /code
-RUN mkdir /code/public
+RUN mkdir /code/public \
+ && chmod 777 /code/public
 USER 1000
 WORKDIR /code
 
