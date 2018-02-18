@@ -95,7 +95,7 @@ options '*' do
 end
 
 get '/ls' do
-  "<pre>" + `ls -la` + "\n" + `ls -la public`
+  "<pre>" + `ls -la /` + "\n" + `ls -la` + "\n" + `ls -la public`
 end
 
 get '/' do
