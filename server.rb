@@ -95,7 +95,7 @@ options '*' do
 end
 
 get '/ls' do
-  `ls -la`
+  "<pre>" + `ls -la` + 'ls -la public'
 end
 
 get '/pwd' do
