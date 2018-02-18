@@ -6,7 +6,7 @@ RUN gem install puma sinatra \
 
 USER 1000
 COPY ./ /code
+RUN mkdir /code/public
 WORKDIR /code
-RUN mkdir public
 
 CMD ["ruby", "server.rb"]
